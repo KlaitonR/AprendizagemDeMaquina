@@ -91,7 +91,6 @@ public class ExtractCaracteristicas {
         else
         	caracteristicas[6] = 2;
         
-        
 //		HighGui.imshow("Imagem original", imagemOriginal);
 //        HighGui.imshow("Imagem processada", imagemProcessada);
 //        
@@ -100,41 +99,46 @@ public class ExtractCaracteristicas {
 		return caracteristicas;
 	}
 
-	public static boolean isMarronCabeloEdna(double r, double g, double b) {
-		 if (b >= 30 && b <= 100 &&  g >= 60 && g <= 135 &&  r >= 130 && r <= 200) {                       
-         	return true;
-         }
-		 return false;
+	public  static  boolean  isMarronCabeloEdna ( double  r , double  g , double  b ) {
+		 if (b >=  30  && b <=  100  &&   g >=  60  && g <=  135  &&   r >=  130  && r <=  200 ) {                       
+      	return  true ;
+      }
+		 return  false ;
 	}
-	public static boolean isVerdeColeteEdna(double r, double g, double b) {
-		if (b >= 7 && b <= 35 &&  g >= 120 && g <= 245 &&  r >= 35 && r <= 110) {                       
-			return true;
+	
+	public  static  boolean  isVerdeColeteEdna ( double  r , double  g , double  b ) {
+		if (b >=  7  && b <=  35  &&   g >=  120  && g <=  245  &&   r >=  35  && r <=  110 ) {                       
+			return  true ;
 		}
-		return false;
+		return  false ;
 	}
+	
 	public static boolean isAzulSaiaEdna(double r, double g, double b) {
-		if (b >= 115 && b <= 200 &&  g >= 117 && g <= 205 &&  r >= 15 && r <= 25) {                       
+		if (b >= 85 && b <= 165 &&  g >= 100 && g <= 190 &&  r >= 0 && r <= 50) {                       
 			return true;
 		}
 		return false;
 	}
-	public static boolean isAzulCabeloMilhouse(double r, double g, double b) {
-		if (b >= 160 && b <= 230 &&  g >= 35 && g <= 130 &&  r >= 35 && r <= 130) {  
-			return true;
+	
+	public  static  boolean  isAzulCabeloMilhouse ( double  r , double  g , double  b ) {
+		if (b >=  160  && b <=  230  &&   g >=  35  && g <=  130  &&   r >=  35  && r <=  130 ) {  
+			return  true ;
 		}
-		return false;
+		return  false ;
 	}
-	public static boolean isVioletaCamisaMilhouse(double r, double g, double b) {
-		if (b >= 180 && b <= 205 &&  g >= 120 && g <= 160 &&  r >= 175 && r <= 200) {                       
-			return true;
+	
+	public  static  boolean  isVioletaCamisaMilhouse ( double  r , double  g , double  b ) {
+		if (b >=  180  && b <=  205  &&   g >=  120  && g <=  160  &&   r >=  175  && r <=  200 ) {                       
+			return  true ;
 		}
-		return false;
+		return  false ;
 	}
-	public static boolean isVermelhoShortMilhouse(double r, double g, double b) {
-		if (b >= 3 && b <= 15 &&  g >= 3 && g <= 15 &&  r >= 145 && r <= 240) {                       
-			return true;
+	
+	public  static  boolean  isVermelhoShortMilhouse ( double  r , double  g , double  b ) {
+		if (b >=  3  && b <=  15  &&   g >=  3  && g <=  15  &&   r >=  145  && r <=  240 ) {                       
+			return  true ;
 		}
-		return false;
+		return  false ;
 	}
 
 	public static void extrair() {
